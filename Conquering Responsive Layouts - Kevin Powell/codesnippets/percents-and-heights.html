@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+
+    <style>
+        body {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .parent {
+            background-color: rgb(0, 92, 54);
+            margin: 2rem auto;
+            
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25rem;
+            font-weight: lighter;
+
+            width: 60%;
+            padding: 5rem 3rem;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1>Using Percentages and avoiding fixed heights</h1>
+            <ul>
+                <li>Declare the widths in percentages, then they change with changing screen sizes.</li>
+                <li>The percentage width of the child is always decided by the width of the parent.</li>
+                <li>If parent does not have a width, then considering an upward hierarchy the width of the parent's parent is considered.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

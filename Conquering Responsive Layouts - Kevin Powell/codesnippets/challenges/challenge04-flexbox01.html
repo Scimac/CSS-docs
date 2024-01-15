@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the layouts</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .content-wrapper {
+            background-color: #23424A;
+        }
+
+        .intro-content-wrapper {
+            padding: 3rem;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1500px;
+        }
+
+        .intro-wrapper {
+            width: 70%;
+            color: white;
+        }
+
+        .intro-header {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .intro-content {
+            font-weight: lighter;
+            font-size: 1.125rem;
+            margin-bottom: 3em;
+        }
+
+        /* giving the padding and margins in ems really hepls - try to change the viewport below 500px and voila seel what happens */
+        .intro-button {
+            display: inline-block;
+
+            background-color: #38CFD9;
+            padding: 0.5em 2em;
+            border: 2px solid #38CFD9;
+            border-radius: 50px;
+
+            text-decoration: none;
+            color: #23424A;
+            font-weight: bold;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        .intro-button:hover {
+            /* border-color: #136C72; */
+            color: #136C72;
+        }
+
+        /* Instead of -- 
+            width:80%;
+            max-width:1500px;
+           we have used --
+            width: min(80%, 1500px); */
+
+        /* margin-inline === margin left and right */
+        /* margin-block === margin top and bottom */
+
+        .middle-wrapper {
+            display: flex;
+            width: min(80%, 1500px);
+            margin-inline: auto;
+            margin-block: 2em;
+        }
+
+        .flex-item>h3 {
+            color: #87629A;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .flex-item {
+            text-align: center;
+        }
+
+        /* for selecting latter of the flex-items ---- Conbinators */
+        .flex-item+.flex-item {
+            margin-left: 5em;
+        }
+
+        .lower-wrapper {
+            background: #136C72;
+            padding-block: 2em;
+        }
+
+        .lower-flex-wrapper {
+            display: flex;
+            width: min(80%, 1500px);
+            margin-inline: auto;
+        }
+
+        .lower-flex-item>h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .lower-flex-item {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .lower-flex-item+.lower-flex-item {
+            margin-left: 13em;
+        }
+
+        @media screen and (max-width: 550px) {
+            .intro-button {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="intro-content-wrapper">
+            <div class="intro-wrapper">
+                <span class="intro-header">
+                    Responsive layouts don't have to be a struggle.
+                </span>
+                <p class="intro-content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nemo similique, ipsum officia,
+                    accusamus quasi reiciendis soluta minima saepe nulla iusto repudiandae quos, ullam ad labore eius
+                    aspernatur nobis necessitatibus?
+                </p>
+                <a href="../../ReadMe.md" class="intro-button">I WANT TO LEARN</a>
+            </div>
+        </div>
+    </div>
+    <div class="middle-wrapper">
+        <div class="flex-item">
+            <h3>Cheap</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Quick</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Quality</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.</p>
+        </div>
+    </div>
+    <div class="lower-wrapper">
+        <div class="lower-flex-wrapper">
+            <div class="lower-flex-item">
+                <h3>Cheap</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="lower-flex-item">
+                <h3>Quick</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 05</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .content-wrapper {
+            background-color: #23424A;
+        }
+
+        .intro-content-wrapper {
+            padding: 3rem;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1500px;
+        }
+
+        .intro-wrapper {
+            width: 70%;
+            color: white;
+        }
+
+        .intro-header {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .intro-content {
+            font-weight: lighter;
+            font-size: 1.125rem;
+            margin-bottom: 3em;
+        }
+
+        /* giving the padding and margins in ems really hepls - try to change the viewport below 500px and voila seel what happens */
+        .intro-button {
+            display: inline-block;
+
+            background-color: #38CFD9;
+            padding: 0.5em 2em;
+            border: 2px solid #38CFD9;
+            border-radius: 50px;
+
+            text-decoration: none;
+            color: #23424A;
+            font-weight: bold;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        .intro-button:hover {
+            /* border-color: #136C72; */
+            color: #136C72;
+        }
+
+        /* Instead of -- 
+            width:80%;
+            max-width:1500px;
+           we have used --
+            width: min(80%, 1500px); */
+
+        /* margin-inline === margin left and right */
+        /* margin-block === margin top and bottom */
+
+        .article-section {
+            display: flex;
+            width: 80%;
+            max-width: 1500px;
+            margin-inline: auto;
+            padding-block-start: 3em;
+        }
+
+        .middle-section-header {
+            color: #136C72;
+            font-size: 2rem;
+            margin-block-end: 1em !important;
+        }
+
+        .middle-content {
+            padding-block: 1em;
+        }
+
+        .article-section h3 {
+            margin-block: 0;
+        }
+
+        .side-content {
+            background: #136C72;
+            padding-inline: 4em;
+            padding-block: 2em;
+            margin-inline-start: 3em;
+            color: #fff;
+        }
+
+        .side-content h3 {
+            font-size: 1.5rem;
+        }
+
+        .flex-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .flex-item p {
+            font-size: 1.125rem;
+            font-weight: lighter;
+            margin-block-end: 2.5em;
+        }
+
+        .article-content {
+            font-size: 1.125rem;
+            font-weight: lighter;
+        }
+
+        @media screen and (max-width: 550px) {
+            .intro-button {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="intro-content-wrapper">
+            <div class="intro-wrapper">
+                <span class="intro-header">
+                    Responsive layouts don't have to be a struggle.
+                </span>
+                <p class="intro-content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nemo similique, ipsum officia,
+                    accusamus quasi reiciendis soluta minima saepe nulla iusto repudiandae quos, ullam ad labore eius
+                    aspernatur nobis necessitatibus?
+                </p>
+                <a href="../../ReadMe.md" class="intro-button">I WANT TO LEARN</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-section">
+        <div class="middle-content">
+            <h3 class="middle-section-header">Quality designs made custom, on demand, just for you</h3>
+            <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam.</p>
+            <p class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+        </div>
+        <div class="side-content">
+            <div class="flex-item">
+                <h3>Cheap</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Quick</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

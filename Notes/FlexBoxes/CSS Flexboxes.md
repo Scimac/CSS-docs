@@ -1,0 +1,144 @@
+```toc
+```
+
+## Flex-Containers
+
+- `Div`s can be changed to **flex-containers** using css --- `display:flex;`
+- Once a div is changed to `display:flex;`, the immediatly subsiquesnt elements turns into flex too.
+- Instead of worrying about block/inline elements flexbox worries about a main axis and a cross axis.
+  - **Main axis and cross axis** changes according to the flex direction (row or column).![[Pasted image 20230409192803.png]]
+### Flex-Direction
+- If the direction of the newly created flex `div` is `row`, then the children --> `flex-items` will have a direction of `column` and vice versa.
+- controlled by - `flex-direction: row/column/row-reverse/column-reverse`
+
+### Flex Wrap
+- Controlled using `flex-wrap:nowrap/wrap`. controles the orientation of the children in the flex box.
+![[Pasted image 20230409192219.png | 300]]    --->   ![[Pasted image 20230409192211.png|218]]
+
+### Flex-Flow
+- Combines both `flex-direction` and `flex-wrap` into one css property, a shorthand - 
+	`flex-flow: row nowrap`
+
+### Justify and Align (content/items?)
+
+1. **justify-content** (works on more than one elements on main axis)
+	- `justify-content` allows us to move the **MULTIPLE flex items** along the **main axis, which changes according to the flex direction (row or column)**.
+	- flex-start is the default value. --- flex-end, center, space-between/evenly/around can also be used.
+			 ![[Pasted image 20230409223922.png|200]]
+2. **align-items**
+	- `align-items` allows us to move the flex items along the **cross axis**.
+	- `stretch` (stretches the items to full flex-container height) is the default value --- flex-start/end, center, space-between/evenly/around, baseline can also be used.
+			![[Pasted image 20230409225533.png|200]]
+3. align-content (works on more than one set of flex-items on cross axis)
+	- `align-content` is same as `justify-content`, except on cross axis.
+	- `align-content` allows us to move the **MULTIPLE flex items** along the **main axis, which changes according to the flex direction (row or column)**.
+	- flex-start is the default value. --- flex-end, center, space-between/evenly/around can also be used.
+			![[Pasted image 20230409225607.png|200]]
+4. Justify items is applied to a container and has the below effects:
+	- In block-level layouts, it aligns the items inside their containing block on the inline axis.
+	- For absolutely-positioned elements, it aligns the items inside their containing block on the inline axis, accounting for the offset values of top, left, bottom, and right.
+	- In table cell layouts, this property is ignored
+	- **In flexbox layouts, this property is ignored**
+	- In grid layouts, it aligns the items inside their grid areas on the inline axis
+
+## Flex-items
+
+- Flex-items are the immediate elements inside the flex-containers. We'll look for css properties that affect individual flex-items rather than the whole bunch.
+
+### Flex-grow
+
+- The `flex-grow` property is a property defined on a flex item and it tells the item how much of the extra space that item is allowed to take to fill its container.
+- By default this property is set to 0 which means the item does not get any extra space.
+- It is like a ratio of the rate with which the flex-items grow.
+	```css
+	.flex-item:nth-child(1) {
+	  flex-grow: 1;
+	}
+	```
+	  ![[Pasted image 20230409233423.png]]
+ 
+ > `flex grow` only cares about the remaining space after all elements are added to the container.
+ > Since by default our 3 elements take up 60% of the container size the remaining space to divide between the elements is only 40% of the container size. 
+ > We can actually modify how this remaining space is calculated, though, by using `flex-basis`
+
+### Flex-shrink
+
+- The `flex-shrink` property is a property defined on a flex item and it tells the item how much should it shrink when less than required space is available. 
+- By default this property is set to 1 which means the items shrink at similar pace.
+	 ![[Pasted image 20230409234408.png|250]]
+
+### Flex-basis
+
+- The `flex-basis` property tells our flex container how much space the item is taking up in the container. 
+- By default this is set to `auto` which means it just uses the `width` property of the element to calculate this.
+- It acts like a `max-width` property when the `flex-grow` is 0 and `flex-shrink` is 1.
+
+### Flex
+
+- `flex` property is a short hand for defining the `flex-grow`, `flex-shrink` and `flex-basis` properties.
+- `flex : 0 1 auto` is the default value [ `flex: flex-grow flex-shrink flex-basis` ]
+
+### Align-self
+
+- The `align-self` property specifies the alignment of the selected flex item inside a flex-container.
+- It over-rides the `align-items` property of the flex-box for that specific flex-item.
+	![[Pasted image 20230410000446.png|]]
+- The default value is `auto`, and we can use all the justify-items values here.
+
+### Justify-self
+
+- There is no justify-self in flex-box, it is a grid property 😐
+- we can use margin inline property or margin-left/right property (both are same thing btw).
+
+### Order
+
+- By default we can order elements in normal order or reverse order by using `flex-direction`, but we can also order individual elements with the `order` property.
+- `order` property has the default value as `0`, the `more negative value` we provide - the more the element `moves to the upwards` and the `more positive value` we provide the element `moves to the downwards` in the arrangement (row/column).
+	
+	Default value - 0 ---       ![[Pasted image 20230410001033.png]]
+	Positive value - 2 ---      ![[Pasted image 20230410001027.png]]
+	Negative value - -1 ---   ![[Pasted image 20230410001031.png]]
+
+
+## Adding Gaps
+
+### gap
+
+- `gap` property will add space between each item based on the value we pass to `gap`.
+
+```css
+.flex-container {
+  gap: 10px;
+}
+```
+
+We can also go a step further and define only a row gap or only a column gap.
+
+```css
+.flex-container {
+  flex-direction: column;
+  height: 250px;
+  flex-wrap: wrap;
+  align-content: center;
+  column-gap: 10px;
+}
+```
+![[Pasted image 20230410001447.png]]
+```css
+.flex-container {
+  flex-direction: column;
+  height: 250px;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10px;
+}
+```
+![[Pasted image 20230410001512.png]]
+
+
+
+
+## Sources
+
+- [ Kevin Powell video ](https://youtu.be/4Oi5xpjoCRk)
+- [ WebDev Simplified Blogs ](https://blog.webdevsimplified.com/2021-11/flexbox/)

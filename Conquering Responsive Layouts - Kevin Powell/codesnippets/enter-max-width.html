@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+
+    <style>
+        body {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .parent {
+            background-color: rgb(0, 92, 54);
+            margin: 2rem auto;
+
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: lighter;
+
+            width: 60%;
+            padding: 5rem 3rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1>Does this make your head turn...??</h1>
+            <p>According to the design principles, the width on the content should not be too long for the viewer, so
+                much as to make his head turn. We may loose interest of the person if he turns his head so much that, it
+                goes out of the screen and to some other interesting thing. In order to tackle this unwanted situation,
+                add max width property to always have our content in the viewers eyespan.</p>
+            <input type="checkbox" onchange="addMaxWidth()" placeholder="Add Max-Width">Add <strong>max-width:1000px;</strong></input>
+        </div>
+    </div>
+
+    <script>
+        function addMaxWidth(oEvent) {
+            const chkBx = this.document.getElementsByTagName('input')[0];
+            this.document.getElementsByClassName('parent')[0].style.maxWidth = chkBx.checked ? '1000px' : '';
+        }
+    </script>
+</body>
+
+</html>

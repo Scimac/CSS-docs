@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "561deed159e2dc82",
+    "type": "split",
+    "children": [
+      {
+        "id": "c18792ae3fc45288",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66043725abdf47ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conquering Responsive Layouts - Kevin Powell/Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88fd5f63a72c5633",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/css basic boilerplate.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1d2266a3db3f04c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "51a4e1f16b383343",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e134605ba004339",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4494505df462d2ee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5a8bbb60659ca6ab",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "88259ac0767f774a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c44669ada0905b7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba27b4c9140787e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f13e368e1326fa2d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/css basic boilerplate.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "80628324f6ca12fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notes/css basic boilerplate.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f07b06462eddf9ee",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "12f2827d7e40db77",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes/css basic boilerplate.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "88fd5f63a72c5633",
+  "lastOpenFiles": [
+    "Conquering Responsive Layouts - Kevin Powell/Notes.md",
+    "Notes/css basic boilerplate.md",
+    "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
+    "Conquering Responsive Layouts - Kevin Powell/final_project/style.css",
+    "Conquering Responsive Layouts - Kevin Powell/final_project/index.html",
+    "Conquering Responsive Layouts - Kevin Powell/final_project"
+  ]
+}
