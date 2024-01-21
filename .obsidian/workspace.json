@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c18792ae3fc45288",
+        "id": "fd189260efbf834d",
         "type": "tabs",
         "children": [
           {
-            "id": "66043725abdf47ea",
+            "id": "d5611f30c73d131c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conquering Responsive Layouts - Kevin Powell/Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "88fd5f63a72c5633",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/css basic boilerplate.md",
+                "file": "Notes/FlexBoxes/CSS Flexboxes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/css basic boilerplate.md",
+                "file": "Notes/FlexBoxes/CSS Flexboxes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/css basic boilerplate.md",
+                "file": "Notes/FlexBoxes/CSS Flexboxes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/css basic boilerplate.md"
+                "file": "Notes/FlexBoxes/CSS Flexboxes.md"
               }
             }
           }
@@ -167,11 +154,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88fd5f63a72c5633",
+  "active": "d5611f30c73d131c",
   "lastOpenFiles": [
+    "Conquering Responsive Layouts - Kevin Powell/final_project/the-image.jpg",
     "Conquering Responsive Layouts - Kevin Powell/Notes.md",
-    "Notes/css basic boilerplate.md",
     "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
+    "Notes/FlexBoxes/CSS Flexboxes.md",
+    "Notes/CSS basics.md",
+    "Notes/Grids/Resources.md",
+    "CSS Legends talk.md",
+    "README.md",
     "Conquering Responsive Layouts - Kevin Powell/final_project/style.css",
     "Conquering Responsive Layouts - Kevin Powell/final_project/index.html",
     "Conquering Responsive Layouts - Kevin Powell/final_project"

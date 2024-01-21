@@ -5,7 +5,7 @@
 #### Using Percentages and avoiding heights
 
 - HTML is responsive by default, if it is breaking, IT'S OUR FAULT!!
-- Percentage of the child is the percentage fo the width/height that of the parent. the upward heirarchy to find the defined height/width continues up until `<body>` and `<html>` if defined parameter not found.
+- Percentage of the child is the percentage for the width/height that of the parent. the upward hierarchy to find the defined height/width continues up until `<body>` and `<html>` if defined parameter not found.
 - Avoid giving defined heights (in pxs or even ems or rems), the block is responsive by default.
 - Read more abt the code [here](./codesnippets/percents-and-heights.html)
 

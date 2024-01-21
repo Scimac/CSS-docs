@@ -1,2 +1,2 @@
-- (Theo (ping.gg) - CSS ecosys explained) [https://youtu.be/CQuTF-bkOgc]
+- (Theo (ping.gg) - CSS ecosystem explained) [https://youtu.be/CQuTF-bkOgc]
 - 

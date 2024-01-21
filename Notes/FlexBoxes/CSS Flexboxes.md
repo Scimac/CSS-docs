@@ -1,5 +1,19 @@
-```toc
-```
+- [[#Flex-Containers|Flex-Containers]]
+	- [[#Flex-Containers#Flex-Direction|Flex-Direction]]
+	- [[#Flex-Containers#Flex Wrap|Flex Wrap]]
+	- [[#Flex-Containers#Flex-Flow|Flex-Flow]]
+	- [[#Flex-Containers#Justify and Align (content/items?)|Justify and Align (content/items?)]]
+- [[#Flex-items|Flex-items]]
+	- [[#Flex-items#Flex-grow|Flex-grow]]
+	- [[#Flex-items#Flex-shrink|Flex-shrink]]
+	- [[#Flex-items#Flex-basis|Flex-basis]]
+	- [[#Flex-items#Flex|Flex]]
+	- [[#Flex-items#Align-self|Align-self]]
+	- [[#Flex-items#Justify-self|Justify-self]]
+	- [[#Flex-items#Order|Order]]
+- [[#Adding Gaps|Adding Gaps]]
+	- [[#Adding Gaps#gap|gap]]
+- [[#Sources|Sources]]
 
 ## Flex-Containers
 
@@ -8,14 +22,19 @@
 - Instead of worrying about block/inline elements flexbox worries about a main axis and a cross axis.
   - **Main axis and cross axis** changes according to the flex direction (row or column).![[Pasted image 20230409192803.png]]
 ### Flex-Direction
+
 - If the direction of the newly created flex `div` is `row`, then the children --> `flex-items` will have a direction of `column` and vice versa.
 - controlled by - `flex-direction: row/column/row-reverse/column-reverse`
 
 ### Flex Wrap
-- Controlled using `flex-wrap:nowrap/wrap`. controles the orientation of the children in the flex box.
+
+- Controlled using `flex-wrap:nowrap/wrap`. 
+- controls the orientation of the children in the flex box.
+
 ![[Pasted image 20230409192219.png | 300]]    --->   ![[Pasted image 20230409192211.png|218]]
 
 ### Flex-Flow
+
 - Combines both `flex-direction` and `flex-wrap` into one css property, a shorthand - 
 	`flex-flow: row nowrap`
 
@@ -25,16 +44,19 @@
 	- `justify-content` allows us to move the **MULTIPLE flex items** along the **main axis, which changes according to the flex direction (row or column)**.
 	- flex-start is the default value. --- flex-end, center, space-between/evenly/around can also be used.
 			 ![[Pasted image 20230409223922.png|200]]
-2. **align-items**
+			 
+1. **align-items**
 	- `align-items` allows us to move the flex items along the **cross axis**.
 	- `stretch` (stretches the items to full flex-container height) is the default value --- flex-start/end, center, space-between/evenly/around, baseline can also be used.
 			![[Pasted image 20230409225533.png|200]]
-3. align-content (works on more than one set of flex-items on cross axis)
+			
+1. align-content (works on more than one set of flex-items on cross axis)
 	- `align-content` is same as `justify-content`, except on cross axis.
 	- `align-content` allows us to move the **MULTIPLE flex items** along the **main axis, which changes according to the flex direction (row or column)**.
 	- flex-start is the default value. --- flex-end, center, space-between/evenly/around can also be used.
 			![[Pasted image 20230409225607.png|200]]
-4. Justify items is applied to a container and has the below effects:
+			
+1. Justify items is applied to a container and has the below effects:
 	- In block-level layouts, it aligns the items inside their containing block on the inline axis.
 	- For absolutely-positioned elements, it aligns the items inside their containing block on the inline axis, accounting for the offset values of top, left, bottom, and right.
 	- In table cell layouts, this property is ignored
@@ -59,6 +81,7 @@
  
  > `flex grow` only cares about the remaining space after all elements are added to the container.
  > Since by default our 3 elements take up 60% of the container size the remaining space to divide between the elements is only 40% of the container size. 
+ 
  > We can actually modify how this remaining space is calculated, though, by using `flex-basis`
 
 ### Flex-shrink
