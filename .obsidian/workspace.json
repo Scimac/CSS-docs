@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d190fd9757f40df9",
+        "id": "9c4a75aa5006df64",
         "type": "tabs",
         "children": [
           {
-            "id": "34d38c8c2ede41bf",
+            "id": "c9c30cd5cb697b94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
+                "file": "Notes/02. Grids/06. Grid Alignment.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
+                "file": "Notes/02. Grids/06. Grid Alignment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
+                "file": "Notes/02. Grids/06. Grid Alignment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md"
+                "file": "Notes/02. Grids/06. Grid Alignment.md"
               }
             }
           }
@@ -154,8 +154,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f13e368e1326fa2d",
+  "active": "c9c30cd5cb697b94",
   "lastOpenFiles": [
+    "Notes/02. Grids/99. Resources.md",
+    "Notes/02. Grids/06. Grid Alignment.md",
+    "Notes/02. Grids/05. Grid Areas and line names.md",
+    "Notes/02. Grids/04. Sizing Units in Grids.md",
+    "Notes/02. Grids/03. Sizing in Grid.md",
+    "Notes/02. Grids/02. Implicit and Explicit Grid.md",
+    "Notes/06. SVG Editing using CSS and JS.md",
+    "Notes/00. Basic CSS/04. Grids vs FlexBox Layouts.md",
+    "Conquering Responsive Layouts - Kevin Powell/Notes.md",
+    "Notes/02. Grids/07. Grid Alignment.md",
+    "Notes/02. Grids/01. Setting Up the Basic Grid.md",
+    "CSS Grids - WesBos/01.grids-basics/style.css",
+    "CSS Grids - WesBos/01.grids-basics/index.html",
+    "CSS Grids - WesBos/01.grids-basics",
+    "CSS Grids - WesBos",
+    "New folder",
+    "Notes/00. Basic CSS/02. Display property in CSS.md",
+    "Pasted image 20240602133718.png",
+    "Notes/02. Grids/images/Line Meanings.png",
+    "Notes/02. Grids/images/Pasted image 20240602133621.png",
+    "Notes/02. Grids/images/Pasted image 20240602133615.png",
+    "Notes/02. Grids/images",
+    "Notes/02. Grids/00. Grids.md",
+    "Notes/01. FlexBoxes/00. Flexboxes.md",
+    "Notes/01. FlexBoxes/01. CSS Flexboxes.md",
+    "Notes/00. Basic CSS/03. Pseudo Class and Pseudo elements.md",
+    "Notes/05. Browser specific CSS.md",
+    "Notes/00. Basic CSS/01. Positioning property in CSS.md",
+    "Notes/00. CSS basics.md",
+    "Notes/00. Basic CSS",
+    "Notes/04. SASS, SCSS.md",
+    "Notes/03. Preprocessors and Postprocessors.md",
+    "Notes/02. Animations.md",
+    "Notes/01. Transitions and Transformations.md",
+    "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
     "Projects/Lucky-Shrub-simple-portfolio/__MACOSX/Lucky-Shrub-logos",
     "Projects/Lucky-Shrub-simple-portfolio/Lucky-Shrub-logos/logoRed.png",
     "Projects/Lucky-Shrub-simple-portfolio/Lucky-Shrub-logos/logoGreen.png",
@@ -163,30 +198,9 @@
     "Projects/Lucky-Shrub-simple-portfolio/__MACOSX",
     "Projects/Lucky-Shrub-simple-portfolio/ReadMe.md",
     "Projects/Lucky-Shrub-simple-portfolio/style.css",
-    "Projects/Lucky-Shrub-simple-portfolio/Lucky-Shrub-logos",
-    "Projects/Lucky-Shrub-simple-portfolio/index.html",
-    "Projects/Lucky-Shrub-simple-portfolio",
-    "Projects/Lucky-Shrub/__MACOSX/Lucky-Shrub-logos",
-    "Projects/Lucky-Shrub/__MACOSX",
     "Projects/Lucky-Shrub/Lucky-Shrub-logos/logoWhite.png",
     "Projects/Lucky-Shrub/Lucky-Shrub-logos/logoRed.png",
     "Projects/Lucky-Shrub/Lucky-Shrub-logos/logoGreen.png",
-    "Projects/Lucky-Shrub/Lucky-Shrub-logos",
-    "Projects/Lucky-Shrub/style.css",
-    "Projects/Lucky-Shrub/ReadMe.md",
-    "Projects/Lucky-Shrub/index.html",
-    "Conquering Responsive Layouts - Kevin Powell/final_project/ReadMe.md",
-    "Conquering Responsive Layouts - Kevin Powell/final_project/the-image.jpg",
-    "Notes/05. Browser specific CSS.md",
-    "Notes/03. Preprocessors and Postprocessors.md",
-    "Notes/01. Transitions and Transformations.md",
-    "Notes/04. SASS, SCSS.md",
-    "Notes/02. Animations.md",
-    "Notes/Grids/Resources.md",
-    "Conquering Responsive Layouts - Kevin Powell/Notes.md",
-    "Notes/FlexBoxes/CSS Flexboxes.md",
-    "Notes/00. CSS basics.md",
-    "CSS Legends talk.md",
-    "README.md"
+    "Projects/Lucky-Shrub/ReadMe.md"
   ]
 }
